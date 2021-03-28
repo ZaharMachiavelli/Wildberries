@@ -204,7 +204,7 @@ more.addEventListener("click", function(e){
 const filterCards = function(field,value) {
 	getGoods().then(data =>{
 		return data.filter(good => good[field] === value)}).
-	then(goods => renderCards(goods));// прикольная хуйня - можно писать бесконечное число then, даже если не возвращает промис
+	then(goods => renderCards(goods));
 }
 
 
